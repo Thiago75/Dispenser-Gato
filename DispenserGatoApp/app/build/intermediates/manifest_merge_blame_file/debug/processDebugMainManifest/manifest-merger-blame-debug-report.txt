@@ -1,0 +1,49 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dispensergato.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:2:5-67
+11-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:2:22-64
+12
+13    <application
+13-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:3:5-10:19
+14        android:allowBackup="true"
+14-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:3:81-107
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:label="Dispenser Gato"
+17-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:3:50-80
+18        android:resizeableActivity="true"
+18-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:3:144-177
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme"
+20-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:3:18-49
+21        android:usesCleartextTraffic="true" >
+21-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:3:108-143
+22        <activity
+22-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:4:9-9:20
+23            android:name="com.dispensergato.app.MainActivity"
+23-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:4:19-47
+24            android:exported="true" >
+24-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:4:48-71
+25            <intent-filter>
+25-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:5:13-8:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:6:17-69
+26-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:6:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:7:17-77
+28-->C:\Users\Gabri\Downloads\DispenserGatoApp_MQTT_EC2_NOVO\DispenserGatoApp\app\src\main\AndroidManifest.xml:7:27-74
+29            </intent-filter>
+30        </activity>
+31    </application>
+32
+33</manifest>
