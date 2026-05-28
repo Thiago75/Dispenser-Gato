@@ -11,22 +11,22 @@ const char* ssid = "NOME_WIFI";
 const char* password = "SENHA_WIFI"; 
 
 // ================= MQTT (EC2 + MOSQUITTO) =================
-const char* MQTT_BROKER = "IP_MÁQUINA_AWS"; 
+const char* MQTT_BROKER = "IP_MAQUINA_AWS"; 
 const int MQTT_PORT = 1883;
 const char* TOPICO_CONFIG = "dispenser/config";
 const char* TOPICO_STATUS = "dispenser/status";
 
 // ================= PINOS (SUA MONTAGEM FÍSICA) =================
-const int PINO_SERVO = 32;
-const int PINO_BUZZER = 13;
-const int PINO_TRIG = 25;
-const int PINO_ECHO = 33;
-const int SDA_PIN = 21;
-const int SCL_PIN = 22;
+const int PINO_SERVO = 32;  // Fio Laranja
+const int PINO_BUZZER = 13; // Perto do GND
+const int PINO_TRIG = 25;   // Fio Amarelo
+const int PINO_ECHO = 33;   // Fio Branco
+const int SDA_PIN = 21;     // Visor
+const int SCL_PIN = 22;     // Visor
 
 // ================= CONFIGURAÇÕES =================
-float ALTURA_RESERVATORIO_CM = 30.0; // Distância total do sensor ao fundo
-float DIST_IDEAL = 5.0;            // Pote cheio (cm)
+float ALTURA_RESERVATORIO_CM = 16.0; // Distância total do sensor ao fundo
+float DIST_IDEAL = 12.0;            // Pote cheio (cm)
 
 String horarioAlimentacao = "08:00";
 
@@ -98,7 +98,7 @@ void liberarRacao() {
   lcd.print("Aberto: " + String(tempoCalculado/1000) + "s");
 
   digitalWrite(PINO_BUZZER, HIGH);
-  servo.write(180);
+  servo.write(90);
   delay(tempoCalculado);
   servo.write(0);
   digitalWrite(PINO_BUZZER, LOW);
